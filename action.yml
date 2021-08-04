@@ -1,0 +1,17 @@
+name: 'Auto Tag Dart Versions'
+description: 'Automatically create tags when you update your pubspec.yaml version'
+author: 'theochampion'
+inputs:
+  pubspec-path:
+    description: 'Path to the pubspec.yaml file to monitor.'
+    required: false
+    default: 'pubspec.yaml'
+  token:
+    description: 'The GitHub access token to allow file reading and tag creation.'
+    required: true
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
+branding:
+  icon: 'tag'
+  color: 'blue'
