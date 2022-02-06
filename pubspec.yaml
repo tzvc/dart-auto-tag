@@ -1,1 +1,5 @@
+name: actions_dart_version_autotag
 version: 1.0.1
+
+environment:
+  sdk: ">=2.15.0 <3.0.0"

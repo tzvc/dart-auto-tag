@@ -1,0 +1,15 @@
+name: Bump version
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - uses: peiffer-innovations/actions-dart-version-autotag@v1.0.0
+        with:
+          token: ${{ secrets.REPO_TOKEN }}
